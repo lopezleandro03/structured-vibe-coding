@@ -8,7 +8,7 @@ import BestPractices from './src/slides/BestPractices.jsx'
 import { GenericThankYouSlide as ThankYouSlide } from '@deckio/deck-engine'
 
 export default {
-  private: true,
+  private: false,
   id: 'structured-vibe-coding',
   title: 'Structured vibe coding with teams of GitHub agents',
   subtitle: 'Agentic Engineering',
