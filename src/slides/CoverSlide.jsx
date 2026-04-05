@@ -11,23 +11,24 @@ export default function CoverSlide({ index, project }) {
 
       <div className="content-frame content-gutter">
         <div className={styles.content}>
-          <p className={styles.eyebrow}>Agentic Engineering</p>
+          <p className={styles.eyebrow}>From Vibes to Engineering</p>
           <h1>
-            Structured vibe coding with teams of GitHub <span className={styles.highlight}>agents</span>
+            From <span className={styles.highlight}>Vibe Coding</span> to Agentic Engineering
           </h1>
           <p className={styles.subtitle}>
-            How to harness multiple AI agents working in parallel — with guardrails, conventions, and human oversight — to ship faster without losing control.
+            How a tweet became a movement — and how to evolve from unstructured AI prompting
+            to orchestrating teams of GitHub agents that ship real software.
           </p>
 
           <div className={styles.meta}>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Topic</span>
-              <span className={styles.metaValue}>GitHub Copilot Agents</span>
+              <span className={styles.metaLabel}>Journey</span>
+              <span className={styles.metaValue}>Vibes → Structure → Squad</span>
             </div>
             <div className={styles.metaDivider} />
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Year</span>
-              <span className={styles.metaValue}>2026</span>
+              <span className={styles.metaLabel}>Stack</span>
+              <span className={styles.metaValue}>GitHub Copilot Agents</span>
             </div>
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function CoverSlide({ index, project }) {
         </div>
       </div>
 
-      <BottomBar text="Structured vibe coding with teams of GitHub agents" />
+      <BottomBar text="From Vibe Coding to Agentic Engineering" />
     </Slide>
   )
 }

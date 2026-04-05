@@ -1,18 +1,18 @@
 import CoverSlide from './src/slides/CoverSlide.jsx'
-import WhatIsVibeCoding from './src/slides/WhatIsVibeCoding.jsx'
-import TheProblem from './src/slides/TheProblem.jsx'
-import StructuredApproach from './src/slides/StructuredApproach.jsx'
-import AgentTeams from './src/slides/AgentTeams.jsx'
-import AgentsInAction from './src/slides/AgentsInAction.jsx'
-import BestPractices from './src/slides/BestPractices.jsx'
+import KarpathyOrigin from './src/slides/KarpathyOrigin.jsx'
+import VibeCodingLimits from './src/slides/VibeCodingLimits.jsx'
+import CustomInstructions from './src/slides/CustomInstructions.jsx'
+import AgentsMdSlide from './src/slides/AgentsMdSlide.jsx'
+import SkillsAndPlans from './src/slides/SkillsAndPlans.jsx'
+import SquadSlide from './src/slides/SquadSlide.jsx'
 import { GenericThankYouSlide as ThankYouSlide } from '@deckio/deck-engine'
 
 export default {
   private: false,
   id: 'structured-vibe-coding',
-  title: 'Structured vibe coding with teams of GitHub agents',
-  subtitle: 'Agentic Engineering',
-  description: 'Agentic Engineering',
+  title: 'From Vibe Coding to Agentic Engineering',
+  subtitle: 'Vibes → Structure → Squad',
+  description: 'How a tweet became a movement — and how to evolve from vibe coding to orchestrating teams of GitHub agents.',
   icon: '🎪',
   accent: '#7c0303',
   theme: 'dark',
@@ -20,12 +20,12 @@ export default {
   order: 1,
   slides: [
     CoverSlide,
-    WhatIsVibeCoding,
-    TheProblem,
-    StructuredApproach,
-    AgentTeams,
-    AgentsInAction,
-    BestPractices,
+    KarpathyOrigin,
+    VibeCodingLimits,
+    CustomInstructions,
+    AgentsMdSlide,
+    SkillsAndPlans,
+    SquadSlide,
     ThankYouSlide,
   ],
 }
