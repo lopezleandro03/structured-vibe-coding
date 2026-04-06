@@ -2,6 +2,7 @@ import CoverSlide from './src/slides/CoverSlide.jsx'
 import KarpathyOrigin from './src/slides/KarpathyOrigin.jsx'
 import VibeCodingLimits from './src/slides/VibeCodingLimits.jsx'
 import AgenticDivider from './src/slides/AgenticDivider.jsx'
+import SdlcInfographic from './src/slides/SdlcInfographic.jsx'
 import CustomInstructions from './src/slides/CustomInstructions.jsx'
 import AgentsMdSlide from './src/slides/AgentsMdSlide.jsx'
 import SkillsAndPlans from './src/slides/SkillsAndPlans.jsx'
@@ -24,6 +25,7 @@ export default {
     KarpathyOrigin,
     VibeCodingLimits,
     AgenticDivider,
+    SdlcInfographic,
     CustomInstructions,
     AgentsMdSlide,
     SkillsAndPlans,
