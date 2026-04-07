@@ -71,7 +71,7 @@
 
 .columns {
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 1fr 60%;
   gap: 28px;
   flex: 1;
   min-height: 0;
@@ -86,8 +86,8 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .card {
@@ -95,8 +95,11 @@
   overflow: hidden;
   background: var(--secondary);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .card::before {
@@ -112,7 +115,7 @@
 
 .cardIcon {
   font-size: 20px;
-  margin-bottom: 6px;
+  flex-shrink: 0;
 }
 
 .card h3 {
@@ -159,6 +162,7 @@
   border-radius: 14px;
   overflow: hidden;
   min-height: 0;
+  max-height: 100%;
 }
 
 .screenshot {
@@ -167,4 +171,5 @@
   height: 100%;
   object-fit: cover;
   object-position: top left;
+  max-height: 100%;
 }
