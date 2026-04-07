@@ -1,5 +1,6 @@
 import { BottomBar, Slide } from '@deckio/deck-engine'
 import styles from './KarpathyOrigin.module.css'
+import tweetImg from '../data/karpathy-tweet.png'
 
 export default function KarpathyOrigin({ index, project }) {
   return (
@@ -15,21 +16,8 @@ export default function KarpathyOrigin({ index, project }) {
         </h1>
 
         <div className={styles.columns}>
-          <div className={styles.tweetCard}>
-            <div className={styles.tweetHeader}>
-              <div className={styles.avatar}>AK</div>
-              <div>
-                <span className={styles.tweetAuthor}>Andrej Karpathy</span>
-                <span className={styles.tweetHandle}>@karpathy</span>
-              </div>
-            </div>
-            <blockquote className={styles.tweetBody}>
-              "There's a new kind of coding I call <strong>"vibe coding"</strong>, where you fully give in
-              to the vibes, embrace exponentials, and forget that the code even exists."
-            </blockquote>
-            <p className={styles.tweetMeta}>
-              Feb 2, 2025 · 14.2M views
-            </p>
+          <div className={styles.screenshotWrapper}>
+            <img src={tweetImg} alt="Karpathy tweet about vibe coding" className={styles.tweetImage} />
           </div>
 
           <div className={styles.impact}>

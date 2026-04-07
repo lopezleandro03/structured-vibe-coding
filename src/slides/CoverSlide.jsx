@@ -22,13 +22,8 @@ export default function CoverSlide({ index, project }) {
 
           <div className={styles.meta}>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Journey</span>
-              <span className={styles.metaValue}>Vibes → Structure → Squad</span>
-            </div>
-            <div className={styles.metaDivider} />
-            <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Stack</span>
-              <span className={styles.metaValue}>GitHub Copilot Agents</span>
+              <span className={styles.metaValue}>Leandro Lopez</span>
+              <span className={styles.metaLabel}>Sr. Solution Engineering Lead</span>
             </div>
           </div>
         </div>
