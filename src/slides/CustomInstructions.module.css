@@ -34,7 +34,8 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  flex: 1;
+  min-height: 0;
 }
 
 .eyebrow {
@@ -43,10 +44,11 @@
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: var(--accent);
+  margin-bottom: 4px;
 }
 
 .body h1 {
-  font-size: clamp(36px, 4.5vw, 64px);
+  font-size: clamp(30px, 3.5vw, 48px);
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -2px;
@@ -60,97 +62,98 @@
 }
 
 .subtitle {
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: clamp(13px, 1.3vw, 16px);
   font-weight: 300;
   color: var(--muted-foreground);
-  line-height: 1.6;
-  max-width: 640px;
+  line-height: 1.5;
+  margin-top: 6px;
 }
 
 .columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: 1fr 50%;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
 }
 
-.codeCard {
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
   background: var(--secondary);
   border: 1px solid var(--border);
   border-radius: 12px;
-  overflow: hidden;
-}
-
-.codeHeader {
+  padding: 12px 16px;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 10px 16px;
-  background: color-mix(in srgb, var(--border) 40%, transparent);
-  border-bottom: 1px solid var(--border);
-}
-
-.codeDot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--border);
-}
-
-.codeTitle {
-  margin-left: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--muted-foreground);
-  letter-spacing: 0.3px;
-}
-
-.codeBlock {
-  padding: 18px 20px;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--foreground);
-  margin: 0;
-  overflow: hidden;
-  white-space: pre-wrap;
-}
-
-.benefits {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.benefitItem {
-  display: flex;
-  align-items: flex-start;
   gap: 14px;
 }
 
-.benefitIcon {
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cyan), var(--blue-glow));
+  opacity: 0.6;
+}
+
+.cardIcon {
   font-size: 20px;
   flex-shrink: 0;
-  margin-top: 2px;
 }
 
-.benefitItem h3 {
-  font-size: 15px;
+.card h3 {
+  font-size: 13px;
   font-weight: 700;
   color: var(--foreground);
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
-.benefitItem p {
-  font-size: 13px;
+.card p {
+  font-size: 11px;
   color: var(--muted-foreground);
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-.benefitItem code {
-  font-size: 12px;
+.card code {
+  font-size: 10px;
   background: var(--surface-overlay);
-  padding: 1px 5px;
-  border-radius: 4px;
+  padding: 1px 4px;
+  border-radius: 3px;
   color: var(--cyan);
+}
+
+.screenshotWrapper {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 0;
+  max-height: 85%;
+  align-self: center;
+}
+
+.screenshot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  max-height: 100%;
 }
