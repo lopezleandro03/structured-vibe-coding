@@ -34,7 +34,8 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  flex: 1;
+  min-height: 0;
 }
 
 .eyebrow {
@@ -43,10 +44,11 @@
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: var(--accent);
+  margin-bottom: 4px;
 }
 
 .body h1 {
-  font-size: clamp(36px, 4.5vw, 64px);
+  font-size: clamp(30px, 3.5vw, 48px);
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -2px;
@@ -60,32 +62,48 @@
 }
 
 .subtitle {
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: clamp(13px, 1.3vw, 16px);
   font-weight: 300;
   color: var(--muted-foreground);
-  line-height: 1.6;
-  max-width: 640px;
+  line-height: 1.5;
+  margin-top: 6px;
 }
 
 .columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 50%;
   gap: 24px;
+  flex: 1;
+  min-height: 0;
 }
 
-.skillCard {
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.card {
   position: relative;
   overflow: hidden;
   background: var(--secondary);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 26px;
+  border-radius: 12px;
+  padding: 12px 16px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
-.skillCard::before {
+.card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -96,41 +114,46 @@
   opacity: 0.6;
 }
 
-.cardLabel {
-  font-size: 17px;
+.cardIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  font-size: 13px;
   font-weight: 700;
   color: var(--foreground);
+  margin-bottom: 4px;
 }
 
-.cardDesc {
-  font-size: 13px;
+.card p {
+  font-size: 11px;
   color: var(--muted-foreground);
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
-.cardDesc code {
-  font-size: 12px;
+.card code {
+  font-size: 10px;
   background: var(--surface-overlay);
-  padding: 1px 5px;
-  border-radius: 4px;
+  padding: 1px 4px;
+  border-radius: 3px;
   color: var(--purple);
 }
 
-.exampleList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;
+.screenshotWrapper {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 0;
+  max-height: 85%;
+  align-self: center;
 }
 
-.example {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  padding: 4px 10px;
-  background: var(--surface-overlay);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--muted-foreground);
+.screenshot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  max-height: 100%;
 }
