@@ -35,7 +35,7 @@ export default function DeckioSquadSlide({ index, project }) {
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#3b82f6' }} />
-                <strong>Enzo</strong> <span className={styles.roleName}>Product Owner — deck-saas</span>
+                <strong>Enzo</strong> <span className={styles.roleName}>Product Owner — deck-saas-core</span>
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#22c55e' }} />

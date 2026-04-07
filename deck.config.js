@@ -11,6 +11,7 @@ import SquadSlide from './src/slides/SquadSlide.jsx'
 import MeetSquadSlide from './src/slides/MeetSquadSlide.jsx'
 import SquadArchSlide from './src/slides/SquadArchSlide.jsx'
 import DeckioSquadSlide from './src/slides/DeckioSquadSlide.jsx'
+import ClosingSlide from './src/slides/ClosingSlide.jsx'
 import { GenericThankYouSlide as ThankYouSlide } from '@deckio/deck-engine'
 
 export default {
@@ -38,6 +39,7 @@ export default {
     MeetSquadSlide,
     SquadArchSlide,
     DeckioSquadSlide,
+    ClosingSlide,
     ThankYouSlide,
   ],
 }
