@@ -10,13 +10,13 @@ export default function ClosingSlide({ index, project }) {
 
       <div className={`${styles.body} content-frame content-gutter`}>
         <div className={styles.quoteCard}>
-          <div className={styles.quoteIcon}>"</div>
+          <div className={styles.quoteIcon}>&ldquo;</div>
           <blockquote className={styles.quote}>
-            We're not building a big team of engineers.<br />
-            We're building a <span className={styles.highlight}>small, elite team</span> that knows how to <span className={styles.highlight}>harness agents</span>.
+            We&apos;re not building a big team of engineers.<br />
+            We&apos;re building a <span className={styles.highlight}>small, elite team</span> that knows how to <span className={styles.highlight}>harness agents</span>.
           </blockquote>
           <p className={styles.elaboration}>
-            The skill isn't writing code anymore — it's orchestrating the ones who do. Defining scope, setting guardrails, reviewing output, and evolving the system. The fewer humans, the sharper the focus. The sharper the focus, the better the agents perform.
+            The skill isn&apos;t writing code anymore — it&apos;s orchestrating the ones who do. Defining scope, setting guardrails, reviewing output, and evolving the system. The fewer humans, the sharper the focus. The sharper the focus, the better the agents perform.
           </p>
           <div className={styles.author}>
             <div className={styles.authorInfo}>
@@ -45,7 +45,7 @@ export default function ClosingSlide({ index, project }) {
           <div className={styles.pillar}>
             <span className={styles.pillarIcon}>⚡</span>
             <h3>Multiply, don't add</h3>
-            <p>One human + five agents > five humans. Leverage scales. Headcount doesn't.</p>
+            <p>One human + five agents &gt; five humans. Leverage scales. Headcount doesn&apos;t.</p>
           </div>
         </div>
       </div>
