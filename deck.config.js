@@ -8,6 +8,7 @@ import CustomInstructions from './src/slides/CustomInstructions.jsx'
 import AgentsMdSlide from './src/slides/AgentsMdSlide.jsx'
 import SkillsAndPlans from './src/slides/SkillsAndPlans.jsx'
 import SquadSlide from './src/slides/SquadSlide.jsx'
+import MeetSquadSlide from './src/slides/MeetSquadSlide.jsx'
 import { GenericThankYouSlide as ThankYouSlide } from '@deckio/deck-engine'
 
 export default {
@@ -32,6 +33,7 @@ export default {
     CustomInstructions,
     SkillsAndPlans,
     SquadSlide,
+    MeetSquadSlide,
     ThankYouSlide,
   ],
 }
