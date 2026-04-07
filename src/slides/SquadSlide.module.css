@@ -47,7 +47,8 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  flex: 1;
+  min-height: 0;
 }
 
 .eyebrow {
@@ -56,13 +57,14 @@
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: var(--accent);
+  margin-bottom: 4px;
 }
 
 .body h1 {
-  font-size: clamp(40px, 5vw, 72px);
+  font-size: clamp(30px, 3.5vw, 48px);
   font-weight: 900;
   line-height: 1.08;
-  letter-spacing: -2.5px;
+  letter-spacing: -2px;
 }
 
 .highlight {
@@ -73,103 +75,151 @@
 }
 
 .subtitle {
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: clamp(13px, 1.3vw, 16px);
   font-weight: 300;
   color: var(--muted-foreground);
-  line-height: 1.6;
-  max-width: 620px;
+  line-height: 1.5;
+  margin-top: 6px;
 }
 
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  align-items: start;
+  gap: 32px;
+  flex: 1;
+  min-height: 0;
 }
 
-.repoCard {
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 0;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
   background: var(--secondary);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.repoHeader {
+  border-radius: 12px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.repoIcon {
-  font-size: 28px;
-}
-
-.repoName {
-  display: block;
-  font-weight: 800;
-  font-size: 17px;
-  color: var(--foreground);
-}
-
-.repoUrl {
-  display: block;
-  font-size: 12px;
-  color: var(--muted-foreground);
-}
-
-.repoDesc {
-  font-size: 13px;
-  color: var(--muted-foreground);
-  line-height: 1.65;
-}
-
-.repoTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  font-size: 11px;
-  font-weight: 600;
-  padding: 4px 10px;
-  background: var(--surface-overlay);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--accent);
-  letter-spacing: 0.3px;
-}
-
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.featureItem {
-  display: flex;
-  align-items: flex-start;
   gap: 14px;
 }
 
-.featureIcon {
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-top: 2px;
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--cyan));
+  opacity: 0.6;
 }
 
-.featureItem h3 {
-  font-size: 15px;
+.cardIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  font-size: 13px;
   font-weight: 700;
   color: var(--foreground);
   margin-bottom: 4px;
 }
 
-.featureItem p {
+.card p {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  line-height: 1.45;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.squadIntro {
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.squadHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.squadLogo {
+  font-size: 32px;
+}
+
+.squadHeader h2 {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.squadTag {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.squadDesc {
   font-size: 13px;
   color: var(--muted-foreground);
-  line-height: 1.55;
+  line-height: 1.6;
+}
+
+.squadFeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.squadFeature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--foreground);
+  padding: 8px 12px;
+  background: var(--surface-overlay);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.installCmd {
+  display: block;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: var(--cyan);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
 }
