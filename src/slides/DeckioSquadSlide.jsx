@@ -23,7 +23,7 @@ export default function DeckioSquadSlide({ index, project }) {
             <div className={styles.roster}>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#f59e0b' }} />
-                <strong>Cuti</strong> <span className={styles.roleName}>Product Owner</span>
+                <strong>Cuti</strong> <span className={styles.roleName}>Product Owner — deck-gateway</span>
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#ef4444' }} />
@@ -35,11 +35,11 @@ export default function DeckioSquadSlide({ index, project }) {
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#3b82f6' }} />
-                <strong>Enzo</strong> <span className={styles.roleName}>Product Owner</span>
+                <strong>Enzo</strong> <span className={styles.roleName}>Product Owner — deck-saas</span>
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#22c55e' }} />
-                <strong>Julian</strong> <span className={styles.roleName}>Product Owner</span>
+                <strong>Julian</strong> <span className={styles.roleName}>Product Owner — deck-workspace</span>
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#06b6d4' }} />
@@ -47,7 +47,7 @@ export default function DeckioSquadSlide({ index, project }) {
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#ec4899' }} />
-                <strong>Messi</strong> <span className={styles.roleName}>Product Owner</span>
+                <strong>Messi</strong> <span className={styles.roleName}>Product Owner — deck-engine</span>
               </div>
               <div className={styles.rosterItem}>
                 <span className={styles.roleColor} style={{ background: '#f97316' }} />
