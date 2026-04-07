@@ -1,4 +1,5 @@
 import { BottomBar, Slide } from '@deckio/deck-engine'
+import agentsMdScreenshot from '../data/agents-md-screenshot.png'
 import styles from './AgentsMdSlide.module.css'
 
 export default function AgentsMdSlide({ index, project }) {
@@ -17,35 +18,43 @@ export default function AgentsMdSlide({ index, project }) {
           A single file that tells every agent who it is, what it owns, and how it should behave.
         </p>
 
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <div className={styles.cardIcon}>🎯</div>
-            <h3>Role &amp; scope</h3>
-            <p>Define what the agent is responsible for — and what it must never touch. Clear boundaries prevent drift.</p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardIcon}>📐</div>
-            <h3>Conventions</h3>
-            <p>Coding patterns, naming rules, architecture decisions. Agents follow them without re-prompting every session.</p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardIcon}>🚧</div>
-            <h3>Guardrails</h3>
-            <p>Files and directories that are off-limits. Config, CI pipelines, infra — protected from accidental modification.</p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardIcon}>✅</div>
-            <h3>Verification</h3>
-            <p>What the agent must run before opening a PR — tests, linters, builds. Quality gates baked into the workflow.</p>
-          </div>
-        </div>
+        <div className={styles.columns}>
+          <div className={styles.left}>
+            <div className={styles.cards}>
+              <div className={styles.card}>
+                <div className={styles.cardIcon}>🎯</div>
+                <h3>Role &amp; scope</h3>
+                <p>Define what the agent is responsible for — and what it must never touch. Clear boundaries prevent drift.</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.cardIcon}>📐</div>
+                <h3>Conventions</h3>
+                <p>Coding patterns, naming rules, architecture decisions. Agents follow them without re-prompting every session.</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.cardIcon}>🚧</div>
+                <h3>Guardrails</h3>
+                <p>Files and directories that are off-limits. Config, CI pipelines, infra — protected from accidental modification.</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.cardIcon}>✅</div>
+                <h3>Verification</h3>
+                <p>What the agent must run before opening a PR — tests, linters, builds. Quality gates baked into the workflow.</p>
+              </div>
+            </div>
 
-        <div className={styles.callout}>
-          <span className={styles.calloutIcon}>💡</span>
-          <p>
-            Think of AGENTS.md as your team's onboarding doc — but for AI.
-            Every agent reads it before writing a single line of code.
-          </p>
+            <div className={styles.callout}>
+              <span className={styles.calloutIcon}>💡</span>
+              <p>
+                Think of AGENTS.md as your team's onboarding doc — but for AI.
+                Every agent reads it before writing a single line of code.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.screenshotWrapper}>
+            <img src={agentsMdScreenshot} alt="AGENTS.md in VS Code" className={styles.screenshot} />
+          </div>
         </div>
       </div>
 
