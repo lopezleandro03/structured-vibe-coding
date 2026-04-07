@@ -9,7 +9,7 @@ export default function AgentsMdSlide({ index, project }) {
       <div className={`orb ${styles.orb2}`} />
 
       <div className={`${styles.body} content-frame content-gutter`}>
-        <p className={styles.eyebrow}>Skill #2</p>
+        <p className={styles.eyebrow}>Skill #1</p>
         <h1>
           <span className={styles.highlight}>AGENTS.md</span> — the repo constitution
         </h1>

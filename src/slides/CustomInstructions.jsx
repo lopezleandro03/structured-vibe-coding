@@ -9,7 +9,7 @@ export default function CustomInstructions({ index, project }) {
       <div className={`orb ${styles.orb2}`} />
 
       <div className={`${styles.body} content-frame content-gutter`}>
-        <p className={styles.eyebrow}>Skill #1</p>
+        <p className={styles.eyebrow}>Skill #2</p>
         <h1>
           Custom <span className={styles.highlight}>Instructions</span>
         </h1>
