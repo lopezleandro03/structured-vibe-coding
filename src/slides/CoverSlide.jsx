@@ -23,14 +23,9 @@ export default function CoverSlide({ index, project }) {
           <div className={styles.meta}>
             <div className={styles.metaItem}>
               <span className={styles.metaValue}>Leandro Lopez</span>
-              <span className={styles.metaLabel}>Sr. Solution Engineering Lead</span>
+              <span className={styles.metaLabel}>Sr. Solution Engineering Lead @ Microsoft</span>
             </div>
           </div>
-        </div>
-
-        <div className={styles.watermark} aria-hidden="true">
-          <img src="/deckio.png" alt="" className={styles.watermarkIcon} />
-          <span className={styles.watermarkText}>DECKIO</span>
         </div>
       </div>
 

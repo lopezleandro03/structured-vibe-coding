@@ -15,7 +15,7 @@ export default function DeckioSquadSlide({ index, project }) {
             <div>
               <p className={styles.eyebrow}>In Practice</p>
               <h1>
-                The DeckIO <span className={styles.highlight}>Squad</span>
+                The DECKIO <span className={styles.highlight}>Squad</span>
               </h1>
               <p className={styles.subtitle}>A real team of 9 agents — each owning a module, guided by a Coach who watches the game and optimizes the roster.</p>
             </div>

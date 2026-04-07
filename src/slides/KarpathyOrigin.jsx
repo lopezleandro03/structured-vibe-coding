@@ -12,7 +12,7 @@ export default function KarpathyOrigin({ index, project }) {
       <div className={`${styles.body} content-frame content-gutter`}>
         <p className={styles.eyebrow}>February 2025</p>
         <h1>
-          The tweet that started <span className={styles.highlight}>everything</span>
+          The origin of <span className={styles.highlight}>vibe coding</span>
         </h1>
 
         <div className={styles.columns}>
