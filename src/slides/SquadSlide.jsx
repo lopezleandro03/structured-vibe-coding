@@ -14,7 +14,7 @@ export default function SquadSlide({ index, project }) {
           From npm package to <span className={styles.highlight}>SaaS platform</span>
         </h1>
         <p className={styles.subtitle}>
-          DeckIO started as an open-source engine. Then teams wanted collaboration, sharing, and publishing — a full SaaS. One agent wasn't enough anymore.
+          DECKIO started as an open-source engine. Then teams wanted collaboration, sharing, and publishing — a full SaaS. One agent wasn't enough anymore.
         </p>
 
         <div className={styles.cards}>

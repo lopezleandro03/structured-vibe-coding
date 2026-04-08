@@ -8,6 +8,7 @@ import UseCaseVideo from './src/slides/UseCaseVideo.jsx'
 import CustomInstructions from './src/slides/CustomInstructions.jsx'
 import AgentsMdSlide from './src/slides/AgentsMdSlide.jsx'
 import SkillsAndPlans from './src/slides/SkillsAndPlans.jsx'
+import AwesomeCopilotSlide from './src/slides/AwesomeCopilotSlide.jsx'
 import SquadSlide from './src/slides/SquadSlide.jsx'
 import MeetSquadSlide from './src/slides/MeetSquadSlide.jsx'
 import SquadArchSlide from './src/slides/SquadArchSlide.jsx'
@@ -42,6 +43,7 @@ export default {
     AgentsMdSlide,
     CustomInstructions,
     SkillsAndPlans,
+    AwesomeCopilotSlide,
     SquadSlide,
     MeetSquadSlide,
     SquadArchSlide,
