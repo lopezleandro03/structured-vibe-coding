@@ -10,6 +10,7 @@ import AgentsMdSlide from './src/slides/AgentsMdSlide.jsx'
 import SkillsAndPlans from './src/slides/SkillsAndPlans.jsx'
 import AwesomeCopilotSlide from './src/slides/AwesomeCopilotSlide.jsx'
 import SquadSlide from './src/slides/SquadSlide.jsx'
+import Skill4Divider from './src/slides/Skill4Divider.jsx'
 import MeetSquadSlide from './src/slides/MeetSquadSlide.jsx'
 import SquadArchSlide from './src/slides/SquadArchSlide.jsx'
 import DeckioSquadSlide from './src/slides/DeckioSquadSlide.jsx'
@@ -44,6 +45,7 @@ export default {
     CustomInstructions,
     SkillsAndPlans,
     AwesomeCopilotSlide,
+    Skill4Divider,
     SquadSlide,
     MeetSquadSlide,
     SquadArchSlide,
