@@ -1,6 +1,6 @@
 import { BottomBar, Slide } from '@deckio/deck-engine'
 import omarPhoto from '../data/omar-photo.png'
-import lobsterMascot from '../data/lobster-mascot.png'
+import lobsterMascot from '../data/closing-mascot.png'
 import styles from './ClosingSlide.module.css'
 
 export default function ClosingSlide({ index, project }) {
