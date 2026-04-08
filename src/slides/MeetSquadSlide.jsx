@@ -14,11 +14,6 @@ export default function MeetSquadSlide({ index, project }) {
           <div className={styles.left}>
             <img src={squadLogo} alt="Squad logo" className={styles.logo} />
 
-            <div className={styles.badge}>
-              <span className={styles.badgeDot} />
-              Alpha — Rapidly evolving
-            </div>
-
             <h1>
               Your AI<br />
               <span className={styles.highlight}>Development</span><br />
@@ -29,9 +24,16 @@ export default function MeetSquadSlide({ index, project }) {
               Describe what you're building. Get a team of specialists that live in your repo. Agents fan out, build in parallel, and land pull requests in minutes.
             </p>
 
+            <code className={styles.installCmd}>npm i -g @bradygaster/squad-cli</code>
+            <code className={styles.installCmd}>squad init</code>
+            <code className={styles.installCmd}>copilot --agent squad</code>
           </div>
 
           <div className={styles.right}>
+            <div className={styles.badge}>
+              <span className={styles.badgeDot} />
+              Alpha — Rapidly evolving
+            </div>
             <div className={styles.terminal}>
               <div className={styles.termHeader}>
                 <span className={styles.dot} style={{ background: '#ff5f57' }} />
@@ -61,25 +63,6 @@ export default function MeetSquadSlide({ index, project }) {
           </div>
         </div>
 
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>Install</h3>
-            <p className={styles.stepDesc}>One global install, zero config files required.</p>
-            <code className={styles.installCmd}>npm i -g @bradygaster/squad-cli</code>
-          </div>
-          <span className={styles.stepArrow}>›</span>
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>Initialize</h3>
-            <p className={styles.stepDesc}>Describe your project and Squad generates your team.</p>
-            <code className={styles.installCmd}>squad init</code>
-          </div>
-          <span className={styles.stepArrow}>›</span>
-          <div className={styles.step}>
-            <h3 className={styles.stepTitle}>Build</h3>
-            <p className={styles.stepDesc}>Talk to your team — they build, test, and land PRs.</p>
-            <code className={styles.installCmd}>copilot --agent squad</code>
-          </div>
-        </div>
       </div>
 
       <BottomBar text="Structured Vibe Coding with a Team of Agents" />
