@@ -108,8 +108,8 @@
 }
 
 .authorPhoto {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--border);
@@ -121,15 +121,17 @@
 }
 
 .authorName {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 800;
   color: var(--foreground);
 }
 
 .authorRole {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted-foreground);
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .pillars {

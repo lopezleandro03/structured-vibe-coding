@@ -15,13 +15,13 @@ export default function ClosingSlide({ index, project }) {
           <div className={styles.left}>
             <div className={styles.quoteCard}>
               <blockquote className={styles.quote}>
-                {"We're not building a big team of engineers. We're building a "}
+                {"\"We're not building a big team of engineers. We're building a "}
                 <span className={styles.highlight}>small, elite team</span>
                 {" that knows how to "}
                 <span className={styles.highlight}>harness agents</span>.
               </blockquote>
               <p className={styles.elaboration}>
-                {"The skill isn't writing code anymore \u2014 it's orchestrating the ones who do. Defining scope, setting guardrails, reviewing output, and evolving the system."}
+                {"\"The skill isn't writing code anymore \u2014 it's orchestrating the ones who do. Defining scope, setting guardrails, reviewing output, and evolving the system.\""}
               </p>
               <div className={styles.author}>
                 <img src={omarPhoto} alt="Omar Shahine" className={styles.authorPhoto} />
