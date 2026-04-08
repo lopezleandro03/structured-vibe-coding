@@ -1,3 +1,4 @@
+import AITourHeroSlide from './src/slides/AITourHeroSlide.jsx'
 import CoverSlide from './src/slides/CoverSlide.jsx'
 import KarpathyOrigin from './src/slides/KarpathyOrigin.jsx'
 import VibeCodingLimits from './src/slides/VibeCodingLimits.jsx'
@@ -21,11 +22,17 @@ export default {
   subtitle: 'Vibes → Structure → Squad',
   description: 'How a tweet became a movement — and how to evolve from vibe coding to orchestrating teams of GitHub agents.',
   icon: '🎪',
-  accent: '#7c0303',
-  theme: 'dark',
+  accent: '#10b981',
+  theme: 'shadcn',
+  designSystem: 'shadcn',
   appearance: 'dark',
+  aurora: {
+    palette: 'forest',
+    colors: ["#10b981","#06b6d4","#3b82f6"],
+  },
   order: 1,
   slides: [
+    AITourHeroSlide,
     CoverSlide,
     KarpathyOrigin,
     VibeCodingLimits,

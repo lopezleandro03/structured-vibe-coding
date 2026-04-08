@@ -1,2 +1,62 @@
 @import '@deckio/deck-engine/styles/global.css';
 @import '@deckio/deck-engine/themes/dark.css';
+
+.deck-ty-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.deck-ty-watermark {
+  display: none !important;
+}
+
+.floating-copilot-logo {
+  position: fixed;
+  bottom: 28px;
+  right: 32px;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  opacity: 0.35;
+  z-index: 9000;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  animation: copilot-float 4s ease-in-out infinite;
+}
+
+@keyframes copilot-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25%      { transform: translateY(-6px) rotate(1.5deg); }
+  50%      { transform: translateY(-2px) rotate(0deg); }
+  75%      { transform: translateY(-8px) rotate(-1.5deg); }
+}
+
+.thankyou-mascots {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  z-index: 9000;
+  pointer-events: none;
+}
+
+.mascot {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  opacity: 0;
+  animation: mascotIn 0.6s ease-out both;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
+
+.m1 { animation-delay: 0.4s; }
+.m2 { animation-delay: 0.7s; }
+.m3 { animation-delay: 1.0s; }
+
+@keyframes mascotIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.7); }
+  to   { opacity: 0.85; transform: translateY(0) scale(1); }
+}

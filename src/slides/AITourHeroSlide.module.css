@@ -1,0 +1,16 @@
+/* Full-screen AI Tour hero image */
+.hero {
+  background: #0a1628 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  z-index: 10;
+}

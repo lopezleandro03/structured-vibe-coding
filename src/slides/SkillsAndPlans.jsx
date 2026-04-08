@@ -51,7 +51,7 @@ export default function SkillsAndPlans({ index, project }) {
         </div>
       </div>
 
-      <BottomBar text="From Vibe Coding to Agentic Engineering" />
+      <BottomBar text="Structured Vibe Coding with a Team of Agents" />
     </Slide>
   )
 }

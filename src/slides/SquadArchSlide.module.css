@@ -10,8 +10,8 @@
   right: -60px;
   background: radial-gradient(
     circle at 40% 40%,
-    color-mix(in srgb, #f472b6 40%, transparent),
-    color-mix(in srgb, #f472b6 15%, transparent) 50%,
+    color-mix(in srgb, #10b981 40%, transparent),
+    color-mix(in srgb, #10b981 15%, transparent) 50%,
     transparent 70%
   );
 }
