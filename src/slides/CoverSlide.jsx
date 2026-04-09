@@ -13,7 +13,7 @@ export default function CoverSlide({ index, project }) {
         <div className={styles.content}>
           <p className={styles.eyebrow}>From Vibes to Engineering</p>
           <h1>
-            Structured <span className={styles.highlight}>Vibe Coding</span> with a Team of Agents
+            Hi Lena! <span className={styles.highlight}>Vibe Coding</span> with a Team of Agents
           </h1>
           <p className={styles.subtitle}>
             How a tweet became a movement — and how to evolve from unstructured AI prompting
