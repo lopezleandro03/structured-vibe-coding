@@ -3,3 +3,5 @@ dist
 .vite
 .github/eyes/
 .deckio-sync-state.json
+.gh-pages-tmp
+*.local
